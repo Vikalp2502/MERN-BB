@@ -37,6 +37,7 @@ function LoginForm({ onClose }) {
 							toast.error(error?.response?.data?.error);
 						});
 				} else {
+					localStorage.setItem("name", "Admin");
 					window.location.href = "/admin";
 				}
 			})
@@ -68,6 +69,7 @@ function LoginForm({ onClose }) {
 							toast.error(error?.response?.data?.error);
 						});
 				} else {
+					localStorage.setItem("name", "Admin");
 					window.location.href = "/admin";
 				}
 			})

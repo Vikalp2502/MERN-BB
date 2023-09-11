@@ -62,6 +62,8 @@ function Navbar() {
 	};
 
 	const handleLogout = () => {
+		localStorage.removeItem("name");
+		localStorage.removeItem("role");
 		localStorage.removeItem("token");
 		setTokenExists(false);
 		window.location.reload();

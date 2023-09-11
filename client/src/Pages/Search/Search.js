@@ -28,7 +28,7 @@ function Search() {
 				});
 		}
 		getData();
-	}, []);
+	});
 
 	async function getData() {
 		if (queryParams.get("query")) {
