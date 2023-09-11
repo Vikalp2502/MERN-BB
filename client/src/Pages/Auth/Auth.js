@@ -62,7 +62,7 @@ function LoginForm({ onClose }) {
 					GetUser()
 						.then(function (resp) {
 							localStorage.setItem("name", resp?.data?.data.name.split(" ")[0]);
-							window.reload();
+							window.location.reload();
 							onClose();
 						})
 						.catch(function (error) {
