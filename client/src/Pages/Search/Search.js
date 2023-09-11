@@ -22,12 +22,12 @@ function Search() {
 			GetUser()
 				.then(function (resp) {
 					setCart(resp.data?.data?.cart);
-					getData();
 				})
 				.catch(function (error) {
 					toast.error(error?.response?.data?.error);
 				});
 		}
+		getData();
 	}, []);
 
 	async function getData() {
